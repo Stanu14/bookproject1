@@ -1,0 +1,49 @@
+body{
+    overflow-x: hidden;
+}
+.navbar-brand img{
+    max-width:100px;
+    border-radius: 50px;
+   
+}
+nav {
+     background-color:rgb(0, 128, 255);
+    
+     position: fixed!important;
+     top: 0;
+     z-index: 99;
+     width: 100%;
+}
+.main-seection{
+    margin-top:126px;
+}
+.carousel-item img
+{
+    height:400px;
+}
+.card  img{
+max-width:200px;
+border-radius: 30px;
+}
+.card-link btn{
+    background-color: rgba(0, 0, 255, 0.707);
+}
+.container img{
+    max-width: 600px;
+    border-radius: 15px;
+}
+.container p{
+text-align: right;
+}
+.navbar-nav{
+    padding-left:320px;
+}
+#navbarNavDropdown{
+    padding-left:120px;
+}
+.about p{
+    text-align: justify;
+}
+/* .about{
+    background-color: rgba(13, 13, 13, 0.421);
+} */
