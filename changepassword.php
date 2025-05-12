@@ -10,7 +10,7 @@ include "admin/config.php";
     
     <style>
       .mb-3{
-        margin:30px;
+        margin:31px;
        
       }
       form{
