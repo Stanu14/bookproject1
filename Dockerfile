@@ -1,6 +1,3 @@
-# # Enable extensions
-# RUN docker-php-ext-install mysqli
-
 # Enable Apache rewrite
 RUN a2enmod rewrite
 
