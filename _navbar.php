@@ -1,5 +1,6 @@
 
 <?php
+session_start();
 if(!isset($_SESSION)){
   session_start();
   }
@@ -21,16 +22,15 @@ display : none;
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-     <link
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"/>
 
 
-     <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -64,28 +64,26 @@ display : none;
           </ul>
         </li>
         <li class="nav-item dropdown">
-         
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-         Category
+        Category
           </a>
 
           <ul class="dropdown-menu">
-          <?php
-        
+        <?php
         $sql1 = "select * from catrgory";
-$query=mysqli_query($con,$sql1);
-while($row = mysqli_fetch_array($query)){
- ?>
-            <li><a class="dropdown-item" href="cat.php?id=<?=$row['id']?>"><?=$row['catrgory']?></a></li>
-            <?php
-}
-?>
+        $query=mysqli_query($con,$sql1);
+        while($row = mysqli_fetch_array($query)){
+        ?>
+        <li><a class="dropdown-item" href="cat.php?id=<?=$row['id']?>"><?=$row['catrgory']?></a></li>
+        <?php
+        }
+        ?>
           </ul>
         </li>
         <li class="nav-item ">
           <a class="nav-link " href="sell.php" 
           >
-         Sell Books
+        Sell Books
           </a>
           <!-- <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -103,7 +101,6 @@ while($row = mysqli_fetch_array($query)){
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul> -->
         </li>
-     
       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="ri-user-fill"></i>
