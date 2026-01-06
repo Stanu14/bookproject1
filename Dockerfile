@@ -1,10 +1,10 @@
-# Enable Apache rewrite
+FROM php:7.3-apache
+
 RUN a2enmod rewrite
 
-# Copy project files
 COPY . /var/www/html/
 
-# Permissions
 RUN chown -R www-data:www-data /var/www/html
 
 EXPOSE 80
+
