@@ -2,6 +2,6 @@
 $con = mysqli_connect("localhost", "root", "", "project");
 
 if (!$con) {
-    die("Database connection failed: " . mysqli_connect_error());
+    error_log("Database connection failed: " . mysqli_connect_error());
 }
 ?>
