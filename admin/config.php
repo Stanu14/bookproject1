@@ -1,9 +1,7 @@
 <?php
-$con = mysqli_connect('localhost','root','', 'project');
-if($con){
-    // echo"sucess";
+$con = mysqli_connect("localhost", "root", "", "project");
+
+if (!$con) {
+    die("Database connection failed: " . mysqli_connect_error());
 }
-    else{
-echo"error";
-    }
 ?>
